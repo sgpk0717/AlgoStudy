@@ -2,7 +2,5 @@ from collections import Counter
 
 class Solution(object):
     def missingNumber(self, nums):
-        N = len(nums)
-        s = (N+1)*N // 2
-        return s - sum(nums)
+        return((len(nums)+1)*len(nums) // 2) - sum(nums)
         
